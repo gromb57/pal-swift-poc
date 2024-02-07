@@ -1,0 +1,5 @@
+amends "TutorialPart.pkl"
+
+name = "Writing a Template"
+
+part = 3
