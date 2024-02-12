@@ -1,0 +1,16 @@
+import "Application.pkl"
+
+hidden db: Application.Database = new {
+  host = "localhost"
+  username = "admin"
+  password = read("env:DATABASE_PASSWORD")
+  dbName = "myapp"
+}
+
+sidecars {
+  for (offset in List(0, 1, 2, 3)) {
+    (db) {
+      port = 6000 + offset
+    }
+  }
+}

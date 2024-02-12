@@ -1,0 +1,8 @@
+amends "Person.pkl"
+
+name = "Alessandra"
+
+// age = -5 // fails
+age = 25
+
+zipCode = "90210"

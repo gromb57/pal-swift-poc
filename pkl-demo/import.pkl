@@ -1,0 +1,5 @@
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.toml@1.0.0#/toml.pkl"
+
+output {
+  renderer = new toml.Renderer {}
+}

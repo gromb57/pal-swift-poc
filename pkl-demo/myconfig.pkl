@@ -1,0 +1,5 @@
+import "@toml/toml.pkl"
+
+output {
+  renderer = new toml.Renderer {}
+}
